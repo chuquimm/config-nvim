@@ -7,6 +7,14 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    use {
+      'lewis6991/gitsigns.nvim',
+      config = function()
+        require('gitsigns').setup()
+      end
+      -- TODO: keymasps: next_chunk, prev_hunk
+    }
+
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
