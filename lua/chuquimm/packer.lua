@@ -10,6 +10,11 @@ return require('packer').startup(function(use)
   use { "bluz71/vim-nightfly-colors", as = "nightfly" } -- theme
   use { "vim-airline/vim-airline" } -- status line
   use { "lewis6991/gitsigns.nvim" } -- show git changes
+  use { "nvim-treesitter/nvim-treesitter", run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
 
   -- naviagation
   use { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { {"nvim-lua/plenary.nvim"} } }
@@ -20,7 +25,6 @@ return require('packer').startup(function(use)
   use { "tpope/vim-surround" }
   use { "windwp/nvim-autopairs" }
 
-  -- use( 'nvim-treesitter/nvim-treesitter', {run= ':TSUpdate'} )
   -- use("mbbill/undotree")
   -- use("tpope/vim-fugitive")
 

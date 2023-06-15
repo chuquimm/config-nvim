@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/chuquimm/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/chuquimm/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/chuquimm/.local/share/nvim/site/pack/packer/start/packer.nvim",
