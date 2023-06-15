@@ -26,9 +26,8 @@ return require('packer').startup(function(use)
   use { "tpope/vim-surround" }
   use { "windwp/nvim-autopairs" }
   use { "folke/todo-comments.nvim", requires = { "nvim-lua/plenary.nvim" } }
-
-  use{ "tpope/vim-fugitive" }
-  -- use("mbbill/undotree")
+  use { "tpope/vim-fugitive" }
+  use { "mbbill/undotree" }
 
   -- use {
   --     'VonHeikemen/lsp-zero.nvim',
