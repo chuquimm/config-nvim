@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
 
   -- ui
   use { "bluz71/vim-nightfly-colors", as = "nightfly" } -- theme
-  use { "vim-airline/vim-airline" } -- status line
+  use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } }
   use { "lewis6991/gitsigns.nvim" } -- show git changes
   use { "lukas-reineke/indent-blankline.nvim" }
   use { "nvim-treesitter/nvim-treesitter", run = function()
