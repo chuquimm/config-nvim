@@ -18,13 +18,14 @@ return require('packer').startup(function(use)
   }
 
   -- naviagation
-  use { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { {"nvim-lua/plenary.nvim"} } }
+  use { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "nvim-lua/plenary.nvim" } }
   use { "https://github.com/ThePrimeagen/harpoon" }
 
   use { "folke/which-key.nvim" } -- show keys suggestions
   use { "numToStr/Comment.nvim" }
   use { "tpope/vim-surround" }
   use { "windwp/nvim-autopairs" }
+  use { "folke/todo-comments.nvim", requires = { "nvim-lua/plenary.nvim" } }
 
   use{ "tpope/vim-fugitive" }
   -- use("mbbill/undotree")
