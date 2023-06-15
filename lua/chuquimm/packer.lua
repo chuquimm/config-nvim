@@ -4,21 +4,21 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim' -- Packer can manage itself
+  use { "wbthomason/packer.nvim" } -- Packer can manage itself
 
   -- ui
   use { "bluz71/vim-nightfly-colors", as = "nightfly" } -- theme
-  use 'vim-airline/vim-airline'
-  use 'lewis6991/gitsigns.nvim'
+  use { "vim-airline/vim-airline" } -- status line
+  use { "lewis6991/gitsigns.nvim" } -- show git changes
 
   -- naviagation
-  use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { {'nvim-lua/plenary.nvim'} } }
-  use 'https://github.com/ThePrimeagen/harpoon'
+  use { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { {"nvim-lua/plenary.nvim"} } }
+  use { "https://github.com/ThePrimeagen/harpoon" }
 
-  use 'folke/which-key.nvim'
-  use { 'numToStr/Comment.nvim' }
-  use { 'tpope/vim-surround' }
-  use { 'windwp/nvim-autopairs' }
+  use { "folke/which-key.nvim" } -- show keys suggestions
+  use { "numToStr/Comment.nvim" }
+  use { "tpope/vim-surround" }
+  use { "windwp/nvim-autopairs" }
 
   -- use( 'nvim-treesitter/nvim-treesitter', {run= ':TSUpdate'} )
   -- use("mbbill/undotree")
