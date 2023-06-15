@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/chuquimm/.local/share/nvim/site/pack/packer/start/nightfly",
     url = "https://github.com/bluz71/vim-nightfly-colors"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/chuquimm/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/chuquimm/.local/share/nvim/site/pack/packer/start/packer.nvim",
