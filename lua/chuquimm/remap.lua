@@ -42,3 +42,8 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- buffers
+vim.keymap.set("n", "<TAB>", ":bn<CR>") -- next
+vim.keymap.set("n", "<S-TAB>", ":bp<CR>") -- prev
+vim.keymap.set("n", "<leader>bd", ":bd<CR>") -- close
