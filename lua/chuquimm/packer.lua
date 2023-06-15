@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
   use { "bluz71/vim-nightfly-colors", as = "nightfly" } -- theme
   use { "vim-airline/vim-airline" } -- status line
   use { "lewis6991/gitsigns.nvim" } -- show git changes
+  use { "lukas-reineke/indent-blankline.nvim" }
   use { "nvim-treesitter/nvim-treesitter", run = function()
       local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
       ts_update()
