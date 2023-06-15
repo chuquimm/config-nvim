@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
 
   use 'folke/which-key.nvim'
   use { 'numToStr/Comment.nvim' }
+  use { 'tpope/vim-surround' }
 
   -- use( 'nvim-treesitter/nvim-treesitter', {run= ':TSUpdate'} )
   -- use("mbbill/undotree")
