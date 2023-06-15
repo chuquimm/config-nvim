@@ -1,6 +1,30 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "javascript", "typescript", "ruby" ,"c", "lua", "vim", "vimdoc", "query" },
+  ensure_installed = {
+    "bash",
+    "c",
+    "css",
+    "dart",
+    "dockerfile",
+    "git_config",
+    "git_rebase",
+    "gitcommit",
+    "gitignore",
+    "html",
+    "javascript",
+    "json",
+    "lua",
+    "query",
+    "regex",
+    "ruby",
+    "solidity",
+    "sql",
+    "typescript",
+    "vim",
+    "vimdoc",
+    "vue",
+    "yaml"
+  },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -22,3 +46,12 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+
+vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEnter'}, {
+  group = vim.api.nvim_create_augroup('TS_FOLD_WORKAROUND', {}),
+  callback = function()
+    vim.opt.foldmethod     = 'expr'
+    vim.opt.foldexpr       = 'nvim_treesitter#foldexpr()'
+  end
+})
+
