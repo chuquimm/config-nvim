@@ -1,6 +1,6 @@
 local vim = vim
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Explore)
 
 --- move line(s)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -59,3 +59,8 @@ end)
 vim.keymap.set("n", "<TAB>", ":bn<CR>") -- next
 vim.keymap.set("n", "<S-TAB>", ":bp<CR>") -- prev
 vim.keymap.set("n", "<leader>bd", ":bd<CR>") -- close
+
+-- vim-rals
+vim.keymap.set("n", "<leader>grm", ":Emodel<CR>")
+vim.keymap.set("n", "<leader>grv", ":Eview ")
+vim.keymap.set("n", "<leader>grc", ":Econtroller<CR>")

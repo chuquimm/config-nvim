@@ -53,6 +53,8 @@ return require('packer').startup(function(use)
     }
   }
 
+  use { "https://github.com/tpope/vim-rails" }
+
   -- use {'github/copilot.vim'}
 
 end)
