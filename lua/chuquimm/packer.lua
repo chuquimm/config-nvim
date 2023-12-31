@@ -1,6 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
+vim = vim
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -54,6 +55,15 @@ return require('packer').startup(function(use)
   }
 
   use { "https://github.com/tpope/vim-rails" }
+
+  use { "https://github.com/preservim/nerdtree",
+    requires = {
+      { "https://github.com/ryanoasis/vim-devicons" },
+      -- { "https://github.com/tiagofumo/vim-nerdtree-syntax-highlight" },
+      { "https://github.com/PhilRunninger/nerdtree-buffer-ops" },
+      { "https://github.com/PhilRunninger/nerdtree-visual-selection" }
+    }
+  }
 
   -- use {'github/copilot.vim'}
 
